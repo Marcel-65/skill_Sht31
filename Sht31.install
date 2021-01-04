@@ -1,0 +1,27 @@
+{
+	"name": "Sht31",
+	"speakableName": "temperature",
+	"version": "0.0.1",
+	"icon": "fab fa-battle-net",
+	"category": "undefined",
+	"author": "Marcel-65",
+	"maintainers": [],
+	"desc": "What is the temperature",
+	"aliceMinVersion": "1.0.0-b3",
+	"pipRequirements": [
+		""
+	],
+	"systemRequirements": [
+		""
+	],
+	"conditions": {
+		"lang": [
+			"en"
+		],
+		"online": true,
+		"asrArbitraryCapture": true,
+		"activeManager": [
+			"pi"
+		]
+	}
+}
