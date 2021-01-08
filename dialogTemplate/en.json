@@ -2,33 +2,67 @@
 	"skill": "Sht31",
 	"slotTypes": [
 		{
-			"name": "DummySlot",
+			"name": "Skill_Sht31",
 			"matchingStrictness": null,
 			"automaticallyExtensible": false,
 			"useSynonyms": true,
 			"values": [
-				{
-					"value": "foo",
+					{
+					"value": "temperature",
 					"synonyms": [
-						"bar"
+						"how warm",
+						"how cold"
 					]
-				}
+				},
+				{
+					"value": "humidity",
+					"synonyms": [
+						"humid"
+					]
+
 			]
 		}
 	],
 	"intents": [
 		{
-			"name": "Dummy",
+			"name": "GetTelemetryData",
 			"enabledByDefault": true,
 			"utterances": [
-				"dummy {foo:=>DummySlotName}",
-				"bar"
+				"what's the {temperature:=>Skill_Sht31}",
+				"what's the {humidity:=>Skill_Sht31} {living room:=>Location}",
+				"{how warm:=>Skill_Sht31} is it in the {living room:=>Location}",
+				"{how cold:=>Skill_Sht31} {living room:=>Location} please",
+				"please tell me how {humid:=>Skill_Sht31} it is in the {living room:=>Location}",
+				"what's the {temperature:=>Skill_Sht31} in the {living room:=>Location}",
+				"give me the {humidity:=>Skill_Sht31} in the {office:=>Location} please",
+				],
+			"slots": [
+				{
+					"name": "Skill_Sht31",
+					"required": false,
+					"type": "Alice/Skill_Sht31",
+					"missingQuestion": ""
+				},
+				{
+					"name": "Location",
+					"required": false,
+					"type": "Alice/Location",
+					"missingQuestion": ""
+				}
+			]
+		},
+		{
+			"name": "AnswerSkill_Sht31",
+			"enabledByDefault": false,
+			"utterances": [
+				"{temperature:=>Skill_Sht31}",
+				"{humidity:=>Skill_Sht31} please",
 			],
 			"slots": [
 				{
-					"name": "DummySlotName",
+					"name": "Skill_Sht31",
 					"required": false,
-					"type": "DummySlot",
+					"type": "Alice/Skill_Sht31",
 					"missingQuestion": ""
 				}
 			]
