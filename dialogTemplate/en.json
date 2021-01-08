@@ -25,7 +25,7 @@
 	],
 	"intents": [
 		{
-			"name": "GetTelemetryData",
+			"name": "GetShtData",
 			"enabledByDefault": true,
 			"utterances": [
 				"what's the {temperature:=>Skill_Sht31}",
