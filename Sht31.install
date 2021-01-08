@@ -3,9 +3,11 @@
 	"speakableName": "temperature",
 	"version": "0.0.1",
 	"icon": "fab fa-battle-net",
-	"category": "undefined",
+	"category": "alice",
 	"author": "Marcel-65",
-	"maintainers": [],
+	"maintainers": [
+	       "Marcel-65"
+	       ],
 	"desc": "What is the temperature",
 	"aliceMinVersion": "1.0.0-b3",
 	"pipRequirements": [
@@ -21,7 +23,7 @@
 		"online": true,
 		"asrArbitraryCapture": true,
 		"activeManager": [
-			"pi"
+			"Sht31"
 		]
 	}
 }
